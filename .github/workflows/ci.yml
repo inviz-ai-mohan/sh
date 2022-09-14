@@ -1,0 +1,15 @@
+name: demo
+
+on: 
+  push:
+    branch: [ master ]
+    
+jobs:
+  run:
+  runs-on: ubuntu-latest
+  
+  
+  steps:
+  - name: runs on sh file
+    run: sh ./sh/ci.yml
+    shell: pwsh
